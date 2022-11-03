@@ -10,21 +10,10 @@
     --different-background: #F5F4FA;
 }
 
-html {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: inherit;
 }
 
 *,
@@ -35,8 +24,8 @@ ul {
 
 .container{
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin: auto;
+    padding: 0, 15px;
 }
 
 
@@ -353,8 +342,31 @@ padding: 0;
 .header-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between
 }
 
 .nav-item {
     display: flex;
+}
+
+.filtr {
+    display: flex;
+    justify-content: center;
+}
+
+.images-filtr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: green;
+}
+
+.element-filtr {
+    width: 100%;
+    flex-basis: calc((100% - 60px) / 3);
+    display: block;
+}
+
+.team-employee:not(:last-child) {
+    margin-right: 30px;
 }
