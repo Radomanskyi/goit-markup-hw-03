@@ -24,8 +24,10 @@
 
 .container{
     width: 1200px;
-    margin: auto;
-    padding: 0, 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -46,8 +48,10 @@ a {
 
 }
 
-.hero, footer {
+.hero {
     background-color: var(--additional-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-button {
@@ -62,6 +66,7 @@ a {
 
 .header {
     background-color: var(--white);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .letter {
@@ -77,12 +82,16 @@ a {
     color: var(--logo-color);
     padding-top: 24px;
     padding-bottom: 25px;
-    padding-right: 93px;
+    margin-right: 93px;
 }
 
 .site-nav {
     display: flex;
     align-items: center;
+}
+
+.item {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -114,13 +123,16 @@ a {
     color: var(--accent);
 }
 
+.header-contact {
+    padding-right: 50px;
+}
+
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
-    margin-right: 50px;
 }
 
 .header-link:hover, .header-link:focus {
@@ -161,7 +173,7 @@ a {
     display: flex;
 }
 
-.benefits-item {
+.benefits-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -227,8 +239,18 @@ a {
     margin-right: 30px;
 }
 
+.section-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .team {
     background-color: var(--different-background);
+}
+
+.title-team-text {
+    margin-bottom: 50px;
 }
 
 .team-flex {
@@ -246,6 +268,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--main-color);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .text-team-employee {
@@ -254,6 +277,23 @@ a {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    background-color: var(--additional-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-li .footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .maps-address-footer {
@@ -288,6 +328,11 @@ a {
     border: transparent;
 }
 
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .button-name:hover, .button-name:focus {
     color: var(--white);
     background-color: var(--accent);
@@ -299,6 +344,7 @@ a {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color);
+    margin-bottom: 4px;
 }
 
 .text-project {
@@ -316,7 +362,6 @@ a {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--white);
-    margin-top: 60px;
     margin-bottom: 20px;
     display: inline-block;
 }
@@ -355,6 +400,7 @@ padding: 0;
     display: flex;
     justify-content: center;
     padding: 8px, 22px;
+    margin-bottom: 50px;
 }
 
 .images-filter {
@@ -364,9 +410,21 @@ padding: 0;
 }
 
 .element-filter {
-    width: 100%;
     flex-basis: calc((100% - 60px) / 3);
-    display: block;
+}
+
+.portfolio-name {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+
+.team-employee {
+    background-color: var(--white);
 }
 
 .team-employee:not(:last-child) {
@@ -378,14 +436,34 @@ padding: 0;
 }
 
 .button-filter {
-    margin-bottom: 34px;
-    margin-top: 94px;
     padding: 8px, 22px;
 }
 
 .active-button {
     background-color: var(--accent);
     color: var(--white);
+    width: 73px;
+    height: 38px;
+}
+
+.button-two {
+    width: 125px;
+    height: 38px;
+}
+
+.button-three {
+    width: 112px;
+    height: 38px;
+}
+
+.button-four {
+    width: 103px;
+    height: 38px;
+}
+
+.button-five {
+    width: 130px;
+    height: 38px;
 }
 
 .button-filter:not(:first-child) {
