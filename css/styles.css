@@ -52,12 +52,12 @@ a {
     background-color: var(--additional-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-button {
     cursor: pointer;
     padding: 10px 32px;
-    min-width: 216px;
     border-radius: 4px;
     text-align: center;
     border: 0;
@@ -98,8 +98,6 @@ a {
 
 .site-contact {
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 .site-nav-link {
@@ -124,7 +122,13 @@ a {
 }
 
 .header-contact {
-    padding-right: 50px;
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-contact:last-child {
+    margin-right: 0;
 }
 
 .header-link {
@@ -161,9 +165,6 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--white);
     background-color: var(--accent);
@@ -257,10 +258,6 @@ a {
     display: flex;
 }
 
-.team-images {
-    margin-bottom: 30px;
-}
-
 .title-team-employee {
     font-weight: 500;
     font-size: 16px;
@@ -278,7 +275,6 @@ a {
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .name {
@@ -411,6 +407,12 @@ padding: 0;
 
 .element-filter {
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.img-filtr {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-name {
