@@ -16,12 +16,6 @@
     padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .container{
     width: 1200px;
     margin-left: auto;
@@ -234,6 +228,7 @@ a {
 
 .img-container {
     display: flex;
+    padding-bottom: 94px;
 }
 
 .img-list:not(:last-child) {
